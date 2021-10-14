@@ -6,6 +6,7 @@ import java.util.List;
 import com.adl.newsapp.controller.QuizController;
 import com.adl.newsapp.interfaces.ActionListener;
 import com.adl.newsapp.model.ModelQuiz;
+import com.adl.newsapp.model.ModelQuizFile;
 import com.adl.newsapp.view.Component;
 import com.adl.newsapp.view.ContentComponent;
 import com.adl.newsapp.view.FooterComponent;
@@ -18,7 +19,7 @@ public class NewsApp {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-	    List<String> soal = new ArrayList<String>();
+	 /*   List<String> soal = new ArrayList<String>();
 	    
 	    
 	    soal.add("multiplechoice;siapakah nama trainner JC;A.Hanif#B.Agung#C.Abdillah#D.Anggito;A;20");
@@ -27,12 +28,16 @@ public class NewsApp {
 		
 	    
 	    ModelQuiz model = new ModelQuiz();
-	    model.setLstSoal(soal);
+	    model.setLstSoal(soal);*/
+		if (args.length>0) {
+		ModelQuizFile model = new ModelQuizFile("F:/soal_test.txt");
 	    
 	    QuizController quiz = new QuizController(model);
 	    quiz.showForm();
 	    quiz.generateNilai();
-		
+		}else {
+			System.out.println("Mohon masukan lokasi file setelah jar!");
+		}
 		
 		
 		
