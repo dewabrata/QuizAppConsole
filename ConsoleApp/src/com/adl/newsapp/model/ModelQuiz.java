@@ -8,6 +8,8 @@ public class ModelQuiz {
 	List<String> lstSoal = new ArrayList<String>();
 	
 	
+	
+	
     public void addSoal(String soal) {
     	
     	this.lstSoal.add(soal);

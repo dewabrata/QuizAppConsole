@@ -41,5 +41,13 @@ public class Form {
 
 	}
 
+	public List<Component> getLstComponent() {
+		return lstComponent;
+	}
+
+	public void setLstComponent(List<Component> lstComponent) {
+		this.lstComponent = lstComponent;
+	}
+
 	
 }

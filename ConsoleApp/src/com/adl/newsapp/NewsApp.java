@@ -21,7 +21,7 @@ public class NewsApp {
 	    List<String> soal = new ArrayList<String>();
 	    
 	    
-	    soal.add("multiplechoice;siapakah nama trainner JC;A.Hanif#B.Agung#C.Abdillah#D.Anggito;A.Hanif;20");
+	    soal.add("multiplechoice;siapakah nama trainner JC;A.Hanif#B.Agung#C.Abdillah#D.Anggito;A;20");
 	    soal.add("essay;10+10 = ?;20;20");
 	    soal.add("essay;5+5 = ?;10;20");
 		
@@ -31,6 +31,7 @@ public class NewsApp {
 	    
 	    QuizController quiz = new QuizController(model);
 	    quiz.showForm();
+	    quiz.generateNilai();
 		
 		
 		
